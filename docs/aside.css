@@ -1,0 +1,29 @@
+aside {
+font-family: "concourse-t3";
+font-size: 0.85rem;
+line-height: 1.40;
+color: #667;
+display: block;
+float: left;
+position: absolute;
+margin-left: 0;
+left: 2.5rem;
+width: 7rem;
+text-align: right;
+list-style-type: none;
+clear:both; margin-bottom: 1rem; }
+
+
+
+@media all and (max-width:520px) {
+    aside { float: inherit;
+    position: inherit;
+    width: 100%;
+    text-align: left;
+    background: #fefefe;
+    padding: 0.5rem;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-left: 3px solid #ccc;
+    }
+}

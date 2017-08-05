@@ -1,0 +1,15 @@
+site_name: Budget Like You Mean It
+
+pages: 
+  - index.md
+  - Building the budget:
+    - 'Creating an outline': 'creating-an-outline.md'
+    - 'Checking the budget with data': 'checking-the-budget.md'
+  - about.md
+
+theme: readthedocs
+
+markdown_extensions:
+  - smarty
+
+extra_css: [aside.css]
