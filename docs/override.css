@@ -10,7 +10,7 @@
         width: auto;
         height: auto
     }
-
+}
 
 
 @font-face {
@@ -102,7 +102,7 @@
     src: url('https://indestructible-type.github.io/fonts/renner-lightitalic-webfont.woff2') format('woff2'),
          url('https://indestructible-type.github.io/fonts/renner-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: italic;;
+    font-style: italic;
 
 }
 
@@ -126,7 +126,7 @@
     src: url('https://indestructible-type.github.io/fonts/renner-mediumitalic-webfont.woff2') format('woff2'),
          url('https://indestructible-type.github.io/fonts/renner-mediumitalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: italic;;
+    font-style: italic;
 
 }
 
