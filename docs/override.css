@@ -1,0 +1,193 @@
+@media screen and (max-width: 768px) {
+    .rst-versions {
+        width: 85%;
+        display: none
+    }
+    .rst-versions.shift {
+        display: block
+    }
+    img {
+        width: auto;
+        height: auto
+    }
+
+
+
+@font-face {
+    font-family: 'rennerblack';
+    src: url('https://indestructible-type.github.io/fonts/renner-black-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rennerblack';
+    src: url('https://indestructible-type.github.io/fonts/renner-blackitalic-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'renner';
+    src: url('https://indestructible-type.github.io/fonts/renner-bold-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'renner';
+    src: url('https://indestructible-type.github.io/fonts/renner-bolditalic-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'renner';
+    src: url('https://indestructible-type.github.io/fonts/renner-book-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'renner';
+    src: url('https://indestructible-type.github.io/fonts/renner-bookitalic-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rennerlight';
+    src: url('https://indestructible-type.github.io/fonts/renner-light-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rennerlight';
+    src: url('https://indestructible-type.github.io/fonts/renner-lightitalic-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rennermedium';
+    src: url('https://indestructible-type.github.io/fonts/renner-medium-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rennermedium';
+    src: url('https://indestructible-type.github.io/fonts/renner-mediumitalic-webfont.woff2') format('woff2'),
+         url('https://indestructible-type.github.io/fonts/renner-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    margin-top: 0;
+    font-weight: 700;
+    font-family: "rennermedium", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
+}
+
+body {
+    font-family: "renner", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    color: #404040;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: #edf0f2
+}
+
+
+input {
+    line-height: normal
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-family: "rennerlight", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    *overflow: visible
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    -webkit-appearance: none;
+    padding: 6px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 80%;
+    font-family: "rennerlight", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 0;
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    transition: border 0.3s linear
+}

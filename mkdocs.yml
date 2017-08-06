@@ -13,4 +13,4 @@ markdown_extensions:
   - smarty
   - admonition
 
-extra_css: [aside.css]
+extra_css: [aside.css, override.css]
