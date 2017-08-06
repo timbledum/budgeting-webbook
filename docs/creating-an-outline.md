@@ -15,6 +15,8 @@ Once the budget is created
 3. By later, I mean right now!
    <aside> By the way, this is an aside </aside>
 
+!!! note
+    This is another way of doing an aside.
 
 Do we harmonise? 'When we do, we do!'
 

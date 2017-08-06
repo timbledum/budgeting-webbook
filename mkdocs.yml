@@ -11,5 +11,6 @@ theme: readthedocs
 
 markdown_extensions:
   - smarty
+  - admonition
 
 extra_css: [aside.css]
