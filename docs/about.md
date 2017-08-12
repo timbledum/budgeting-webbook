@@ -3,7 +3,7 @@ Date: 2017-08-03 20:21
 Category: Other
 
 
-### Who am I? 
+### Who am I?
 
 I am a finance and accounting professional currently working as a financial accountant in Auckland, New Zealand. I have a personal passion in enabling people to be able to more effectively manage their personal finances.
 

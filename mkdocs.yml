@@ -1,10 +1,15 @@
 site_name: Budget Like You Mean It
 
-pages: 
+pages:
   - index.md
   - Building the budget:
-    - 'Creating an outline': 'creating-an-outline.md'
-    - 'Checking the budget with data': 'checking-the-budget.md'
+    - 'Creating an outline': 'A01-creating-an-outline/index.md'
+    - 'Is the budget reasonable?': 'A02-is-the-budget-real/index.md'
+    # - 'Checking your spending against budget': 'A03-spend-vs-budget/index.md'
+    # - 'Building a flexible spending report': 'A04-building-a-report/index.md'
+    # - 'What''s my networth - balancing the data': 'A05-balancing-the-data/index.md'
+    # - 'Planning the future - a more flexible budget': 'A06-planning-the-future/index.md'
+    # - 'Communicating the budget - dashboards': 'A07-communicating-the-budget/index.md'
   - about.md
 
 theme: readthedocs
@@ -13,4 +18,4 @@ markdown_extensions:
   - smarty
   - admonition
 
-extra_css: [aside.css, override.css]
+extra_css: [css/aside.css, css/override.css]

@@ -22,5 +22,4 @@ Do we harmonise? 'When we do, we do!'
 
 Here is what your first budget will look like:
 
-![First budget!](images/first-budget.png)
-
+![First budget!](first-budget.png)
