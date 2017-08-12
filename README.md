@@ -50,3 +50,6 @@ This is where I am building my website about budgeting in excel.
 - Full visualisation
 - Automating the import process (power query; python; visual basic)
 - Appearance and readability
+
+### Other things to mention
+- Rent vs. mortgage accounting
