@@ -13,7 +13,6 @@ Once the budget is created
    For example, if your rent is weekly, put your weekly amount in. We will
    harmonise all of the expenses later.
 3. By later, I mean right now!
-   <aside> By the way, this is an aside </aside>
 
 !!! note
     This is another way of doing an aside.
