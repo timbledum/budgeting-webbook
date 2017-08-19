@@ -10,6 +10,7 @@ pages:
     # - 'What''s my networth - balancing the data': 'A05-balancing-the-data/index.md'
     # - 'Planning the future - a more flexible budget': 'A06-planning-the-future/index.md'
     # - 'Communicating the budget - dashboards': 'A07-communicating-the-budget/index.md'
+  - introduction-to-excel.md
   - about.md
 
 theme: readthedocs
