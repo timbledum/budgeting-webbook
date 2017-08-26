@@ -105,9 +105,8 @@ Go ahead and enter Rambo in column A, and 10 in column B in the newly created ro
 
 ![New row issue][rowissue]
 
-This is a common pitfall in Excel and happens often, so be aware of this – the most simple work around generally is to insert a row or column in the middle of a range rather than at the end or the beginning. [In the next section](#data-ranges-and-tables), we will see one way to solve this issue.
+This is a common pitfall in Excel and happens often, so be aware of this – the most simple work around generally is to insert a row or column in the middle of a range rather than at the end or the beginning. [Excel tables](#data-ranges-and-tables) are one great way to solve this issue.
 
-### Data ranges and tables
 
 ### Data types and number formatting
 
@@ -126,9 +125,48 @@ Text (strings):          left aligned
 Trues/falses (booleans): mid-aligned
 ```
 
+
 ### References
 
 -[ ] Fixed vs. floating
+
+
+### Data ranges and tables
+
+When you get spreadsheets, usually they are a mix of headings, subtotals, calculations, explanatory text, and other information all right up next to each other. This is fine for reports, however, something magical happens when we take care to structure data in a special way.
+
+Excel has the capabilities to do some really exciting stuff with *data*. Well presented data usually has a *headings* row at the top, with a series of rows underneath with the information that we are interested in, ideally with one row per transaction or record. You may have used the *autofilter* to sort or filter data.
+
+![Picture of filter]
+
+It can be a hassle to select the correct range for the autofilter in the first place. What if I told you that you could autofilter with one single shortcut/click **and** you *didn't even need to autofilter in the first place* to do simple filters and sorts? All you need to do is follow these simple rules:
+
+1. Make sure that there is *empty space* around the data. The top and left sides of the spreadsheet count as empty space.
+2. Differientiate the headings via formatting (I suggest bold)
+3. Ensure that there are no empty cells within the table (not strictly required, but a great idea and helps when, for example, displaying pivot table contents correctly). The data should be tightly packed (no subheadings, for example).
+
+![Picture of a data range]
+
+If you have these things, then you can do some awesome stuff:
+
+* You can make the selected data into a pivot table or autofilter without having to select the range – Excel can detect the correct range as long as any cell is selected.
+* You can right click in a column to sort that column *without the autofilter*.
+* You can right click in a cell to filter *the whole table* by that cell's value! That's *better* than autofilter!
+
+Now that the data is in a format that Excel loves, we can (if we want to) convert it into an official *Excel Table*. To do this, go to `Home > Format as Table`, or `Insert > Table`, or simply hit `Ctrl+t`.
+
+Why would we do this? Well, where do we start!?
+
+* You can easily format the table in a multitude of great looking styles, or build your own style! This means that the formatting won't break when your users add rows or copy paste into your table.
+* If you add a row between your data and the total, the range for the data automatically picks up the new row (see the end of the [formula](#simple-formulas) section for why this is useful.
+* Ever had a problem where you had to manually change a pivot table or chart range once you have added new rows to your data? No more! References to Excel Tables *automatically expand* when adding new rows to your tables! You can add new rows by hitting tab in the last row of the table, or by dragging the bottom right corner.
+* You can make use of table *nomenclature* (special way of naming things). For example, instead of summing `A2:A43`, you can sum `transactions["Amounts"]`. (Usually I don't type these out – Excel automatically puts these in formula when you select a range. Nice!)
+* Excel Tables are the main and best way to get information from your spreadsheet to Power Pivot or Power Query (advanced).
+
+![Picture of an Excel table]
+
+I strongly suggest that you rename tables from the default `Table1` to something more meaningful as soon as you create them.
+
 
 ### The F2 key – Excel modes
 
@@ -139,6 +177,7 @@ There are two modes for entering data in Excel. *Enter* mode and *edit* mode. If
 *Enter* mode is primarily useful as it allows you to insert *cell references* by using the arrow keys. The mode you are in can be found in the bottom left of the window and can be switched with `F2`.
 
 ![Enter vs. edit mode in Excel][ee]
+
 
 ### Excel alternatives
 
