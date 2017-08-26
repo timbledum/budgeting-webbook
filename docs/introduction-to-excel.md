@@ -48,6 +48,7 @@ B4:D8  A block of cells in a square from B4 to D8 (example below)
 
 ![Example selection][es]
 
+
 ### Entering data
 
 Click on a cell and start typing. Let's type in a bit of data for some test scores. Start entering some names. Every time you are finished, hit `enter`. You can enter a set of data very quickly this way.
@@ -112,7 +113,7 @@ This is a common pitfall in Excel and happens often, so be aware of this – the
 
 One key concept in Excel is that the presentation of what is in the cells can be customised. What you see in the cell may not accurately represent the data contained.
 
-This is both dangerous and useful. Dangerous, because what looks like a number might actually be stored as text, and it is impossible to easy see what is a formula and what is a value. Also, a number might only show a certain level of precision: `0.52`, for example, might display as `1`. Useful, because it enables use to use math in cells with only the results displayed, and it enables us to store dates as numbers, which allows all kinds of useful operations on them.
+This is both dangerous and useful. Dangerous, because what looks like a number might actually be stored as text, and it is impossible to easy see what is a formula and what is a value. Also, a number might only show a certain level of precision: `0.52`, for example, might display as `1`. Useful, because it enables use to use math in cells with only the results displayed, and it enables us to store dates as numbers, which allows all kinds of useful operations.
 
 To easy see the underlying details, use the key-board shortcut ``ctrl+` `` to toggle into *view values* mode.
 
@@ -137,7 +138,7 @@ When you get spreadsheets, usually they are a mix of headings, subtotals, calcul
 
 Excel has the capabilities to do some really exciting stuff with *data*. Well presented data usually has a *headings* row at the top, with a series of rows underneath with the information that we are interested in, ideally with one row per transaction or record. You may have used the *autofilter* to sort or filter data.
 
-![Picture of filter]
+![Picture of filter][filter]
 
 It can be a hassle to select the correct range for the autofilter in the first place. What if I told you that you could autofilter with one single shortcut/click **and** you *didn't even need to autofilter in the first place* to do simple filters and sorts? All you need to do is follow these simple rules:
 
@@ -145,7 +146,7 @@ It can be a hassle to select the correct range for the autofilter in the first p
 2. Differientiate the headings via formatting (I suggest bold)
 3. Ensure that there are no empty cells within the table (not strictly required, but a great idea and helps when, for example, displaying pivot table contents correctly). The data should be tightly packed (no subheadings, for example).
 
-![Picture of a data range]
+![Picture of a data range][data-range]
 
 If you have these things, then you can do some awesome stuff:
 
@@ -153,17 +154,20 @@ If you have these things, then you can do some awesome stuff:
 * You can right click in a column to sort that column *without the autofilter*.
 * You can right click in a cell to filter *the whole table* by that cell's value! That's *better* than autofilter!
 
+![Context menu][dr-right-click]
+
 Now that the data is in a format that Excel loves, we can (if we want to) convert it into an official *Excel Table*. To do this, go to `Home > Format as Table`, or `Insert > Table`, or simply hit `Ctrl+t`.
 
 Why would we do this? Well, where do we start!?
 
 * You can easily format the table in a multitude of great looking styles, or build your own style! This means that the formatting won't break when your users add rows or copy paste into your table.
+* Excel Tables are filtered by default, and allow you to have multiple filtered ranges per sheet.
 * If you add a row between your data and the total, the range for the data automatically picks up the new row (see the end of the [formula](#simple-formulas) section for why this is useful.
 * Ever had a problem where you had to manually change a pivot table or chart range once you have added new rows to your data? No more! References to Excel Tables *automatically expand* when adding new rows to your tables! You can add new rows by hitting tab in the last row of the table, or by dragging the bottom right corner.
 * You can make use of table *nomenclature* (special way of naming things). For example, instead of summing `A2:A43`, you can sum `transactions["Amounts"]`. (Usually I don't type these out – Excel automatically puts these in formula when you select a range. Nice!)
 * Excel Tables are the main and best way to get information from your spreadsheet to Power Pivot or Power Query (advanced).
 
-![Picture of an Excel table]
+![Picture of an Excel table][excel-table]
 
 I strongly suggest that you rename tables from the default `Table1` to something more meaningful as soon as you create them.
 
@@ -196,8 +200,25 @@ If your thirst for Excel has not been satiated and you want to continue your Exc
 
 - [Chandoo's blog][chandoo], which covers a wide variety of Excel topics written in an easy to understand manner.
 - [Excelisfun youtube channel][eif], an amazing resource for more visual learners. Mike is a very enthusiastic teacher who makes learning about Excel exciting and engaging.
+- [Contextures.com][cntx], which has all kinds of useful tips. The blog is especially interesting, and often has a round-up of useful articles published across the interwebs.
 - [Ken Pul's blog][ken], which focuses primarily on Power Pivot/Power Query (which are amazing, but definitely more advanced).
 - [Modeloff][mo] is an Excel financial modelling competition. The great thing about this site is all of the past questions – if you really want to challenge your Excel capabilities in a practical way, this is a great resource with some worked answers by big-shot consulting companies.
+
+
+### Key learnings
+
+What have we covered in this article?
+
+* What is a spreadsheet, and how are they used
+* How to get into a spreadsheet
+* How is a spreadsheet structured and what are they made up of
+* How to enter data into a spreadsheet
+* How to create simple formulas like `=SUM()` or `=AVERAGE()`
+* Why the data that you see in a cell might not actually reflect the underlying data
+* Fixed vs. floating references, and why you would want to use each in different situations to a avoid manual work
+* How Excel has an implicit format that it wants you to use to present data, and how you can make that explicit using Excel Tables
+* How Excel has different editing modes and how you can easy switch between these to take advantage of different ways to edit formulas.
+* Some Excel alternatives, most of which work in a very similar way.
 
 [excel]: https://products.office.com/en-nz/excel
 [sheets]: https://www.google.com/sheets/about/
@@ -207,6 +228,7 @@ If your thirst for Excel has not been satiated and you want to continue your Exc
 [eif]: https://www.youtube.com/user/ExcelIsFun
 [ken]: https://www.excelguru.ca/blog/
 [mo]: https://www.modeloff.com
+[cntx]: http://www.contextures.com
 
 [excelpic]: images/excelpic.png
 [numberspic]: images/numberspic.png
@@ -218,3 +240,7 @@ If your thirst for Excel has not been satiated and you want to continue your Exc
 [sf]: images/sum.png
 [af]: images/average.png
 [rowissue]: images/newrowissue.png
+[filter]: images/filter.png
+[data-range]: images/data-range.png
+[dr-right-click]: images/data-range-right-click.png
+[excel-table]: images/excel-table.png
