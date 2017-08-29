@@ -129,7 +129,41 @@ Trues/falses (booleans): mid-aligned
 
 ### References
 
--[ ] Fixed vs. floating
+Now that we know how to build [simple formulas](#simple-formulas), we can start to look at how to use references in a more powerful way.
+
+We already know that we can use *references* to link cells together to build powerful and dynamic formulas. For example, above we created a formula that adds up (`=SUM()`s) all numbers within a range – any time any of those numbers change, our total will update. Another example is if we want to multiply price by quantity to get the total revenue for a transaction.
+
+![Picture of single P*Q=R calculation][ref-single]
+
+This is great for if we only want to do this calculation once, but what if we want to do this calculation for a whole *column* of values. Do we have to manually enter each cell in the column? H to the *no*! It turns out Excel is smart enough to make the cell references *relative* – if you copy-paste the cell to the whole the column or drag the cell down to the bottom using the square in the bottom-right corner of the cell, Excel will do all the hard work to move the references too. Although the cell reference might look like `=A2 * B2`, it *actually* means `= the cell two to the left times the cell one to the left`.
+
+![Picture of a column of P8Q=R calculations][ref-column]
+
+This is very powerful! However, there are two main situations that we might not want this default *floating reference* behaviour, and instead want a *fixed*, or *absolute* reference.
+
+1. We may want all formulas in a range to reference the same value – for example, perhaps the price is the same for everything, but the quantity could change.
+2. We want to cross-tabulate data in a nicely displayed two-dimensional table. One reference in a formula links to the column headings (and should have the row fixed and the column floating) and one reference links to the row headings (which should have the column fixed and the row floating).
+
+The way Excel lets us tell it that a reference should be fixed is with `$` signs:
+
+```text
+A1      relative
+$A$1    fixed
+$A1     fixed column, floating row
+A$1     fixed row, floating column
+```
+
+It is fairly onerous to key in these `$` signs, so Excel gives us a great keyboard shortcut. When I learnt this shortcut when I was an accounting graduate, it changed my life. I pried off the `$` key in a burst of freedom and joy (well, I would have if it wasn't also the `4` key).
+
+It is `F4`. Use it wisely. You're welcome.
+
+Anyway, let's see those examples. Firstly, let's see a column where we have one constant value and one floating value. To reiterate, the beauty of these cell references is that you just have to get them right in the top cell, then you can copy-paste down to the whole column.
+
+![Picture of a column with a fixed value][ref-fixed]
+
+Now, let's see that cross-tabulated table – this is the advanced case where we mix floating and fixed within the *same reference*. You can continue to hit `F4` to iterate around the various combinations of fixed and floating within a cell refrence.
+
+![Picture of cross-tabulated table][ref-cross]
 
 
 ### Data ranges and tables
@@ -181,6 +215,8 @@ There are two modes for entering data in Excel. *Enter* mode and *edit* mode. If
 *Enter* mode is primarily useful as it allows you to insert *cell references* by using the arrow keys. The mode you are in can be found in the bottom left of the window and can be switched with `F2`.
 
 ![Enter vs. edit mode in Excel][ee]
+
+Seriously, I cannot emphasise how much I use this keyboard shortcut – this is how I start editing cells from the keyboard without overwriting the cell or reaching for the mouse. Once I am in the cell, I can effortlessly switch between enter mode (for selecting close cell references), and edit mode (for making tweaks to the formula).
 
 
 ### Excel alternatives
@@ -244,3 +280,7 @@ What have we covered in this article?
 [data-range]: images/data-range.png
 [dr-right-click]: images/data-range-right-click.png
 [excel-table]: images/excel-table.png
+[ref-single]: images/rsingle.png
+[ref-column]: images/rcolumn.png
+[ref-fixed]: images/rfixed.png
+[ref-cross]: images/rcross.png
