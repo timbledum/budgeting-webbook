@@ -17,6 +17,6 @@ Our budget developed over the course of several years as my Excel chops improved
 
 <center>
 
-[![linkedin](images/li-icon.png)](https://www.linkedin.com/in/marcus-croucher-b08ba3102/) You can find me on LinkedIn here!
+[![linkedin](images/li-icon.png)](https://www.linkedin.com/in/marcus-croucher) You can find me on LinkedIn here!
 
 </center>
